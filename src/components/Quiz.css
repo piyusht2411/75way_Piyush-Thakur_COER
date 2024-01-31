@@ -1,0 +1,63 @@
+.container .correct{
+    background-color: #317d5f;
+    border-color: #4b6e64;
+}
+.answered{
+    background-color: #0de18c;
+    border-color: #14dca4;
+
+}
+.reviewed{
+    background-color: #e9cb0c;
+    border-color: #e5c80a;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.container .wrong{
+    background-color: #317d5f;
+    border-color: #4b6e64;
+}
+.container ul li{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+
+
+}
+.container button{
+    margin: auto;
+    width: 250px;
+    height: 65px;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    /* margin: auto;
+    width: 100px;
+    height: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer; */
+
+}
+/* .mybuttons{
+    display: flex;
+    width:25vw;
+    justify-content: space-around;
+} */
+
+.mytimer{
+    border:2px solid black;
+    width:40px;
+    padding-left: 10px;
+}
