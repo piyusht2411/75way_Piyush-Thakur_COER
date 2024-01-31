@@ -7,7 +7,7 @@ const Home = () => {
     <div className='homeContainer'>
     <h2>Welcome to Quiz</h2>
     <p>Please click below for starting your quiz</p>
-    <Link to='/quiz'><button>Start Quiz</button></Link>
+    <Link to='/quiz'><button className='homeButton'>Start Quiz</button></Link>
     </div>
 
   

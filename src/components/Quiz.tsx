@@ -198,7 +198,8 @@ const Quiz = () => {
      {!result? <><h1>Quiz App</h1> <hr/></>: <></>}
      
       {result?<div className='resultContainer'><h2>You scored {score} out of {data.length}</h2>
-      <button onClick={reset}>Retry</button></div>:<>
+      <p>You may retry to score better</p>
+      <button className='submitButton' onClick={reset}>Retry</button></div>:<>
       <h2>{index+1}. {question.question}</h2>
       <ul>
         <li ref={Option1} onClick = {(e)=>{checkAns(e,1)}}>{question.option1}</li>

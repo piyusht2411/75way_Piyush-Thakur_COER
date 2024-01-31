@@ -12,3 +12,45 @@
     left: 25%;
   transform: translate(0, -50%);
 }
+.homeButton{
+  margin: auto;
+    width: 106px;
+    height: 59px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .homeButton {
+      margin: auto;
+      width: 80px;
+      height: 47px;
+      font-size: 12px;
+      font-weight: 800;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+  .homeContainer {
+      border: 1px solid black;
+      width: 69vw;
+      height: 28vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 14%;
+      transform: translate(0, -50%);
+  }
+  .homeContainer h2{
+      font-size: 13px;
+  font-weight: 700;
+  }
+  .homeContainer p{
+      font-size: 12px;
+  }
+
+}
