@@ -213,8 +213,14 @@ const Quiz = () => {
       <button onClick = {review}>Review</button>
       <button onClick = {()=>{if(window.confirm('You really want to submit')){finish()}}}>Submit</button>
       </div>
-      <div>{index+1} out of {data.length} queshions</div></>}
-      <Webcam/>
+      <div>{index+1} out of {data.length} queshions</div>
+      <Webcam style={{
+           border:"2px solid black",
+             width: "25%",
+          }}/>
+     
+      </>}
+    
 
     </div>
     {!result?<>
