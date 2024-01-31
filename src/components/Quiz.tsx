@@ -26,16 +26,13 @@ const Quiz = () => {
       Option3,
       Option4];
     let [score, setScore] = useState<number>(0);
-
+// for checking answer
     const checkAns = (e:any,ans:any)=>{
         if(lock==false){
             if(question.ans===ans){
                 e.target.classList.add('correct');
                 setLock(true);
-                if(submitAnswer==true){
-                  setScore(prev=>prev+1);
-                }
-               
+                setScore(prev=>prev+1);
     
             }
             else{
@@ -56,7 +53,6 @@ const Quiz = () => {
             if(index===data.length-1){
                 setResult(true);
                 return 0;
-
             }
             if(index==0){
               button1.current?.classList.remove('reviewed');
@@ -78,7 +74,7 @@ const Quiz = () => {
               button5.current?.classList.remove('reviewed');
               button5.current?.classList.add('answered')
             }
-            setSubmitAnswer(true);
+            
             setIndex(++index);
             setQuestion(data[index]);
             setLock(false);
@@ -184,6 +180,7 @@ const Quiz = () => {
       setQuestion(data[4]);
       setLock(false);
     }
+    // for submiting the answer
     const finish = ()=>{
       setResult(true);
     }
@@ -238,4 +235,4 @@ const Quiz = () => {
   )
 }
 
-export default Quiz
+export default Quiz;
