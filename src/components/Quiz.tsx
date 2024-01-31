@@ -186,10 +186,10 @@ const Quiz = () => {
     }
 
     // timeout function for finish test after 20 seconds
-    // setTimeout(()=>{
-    //   finish();
+    setTimeout(()=>{
+      finish();
 
-    // },20000)
+    },20000)
 
     
   return (
