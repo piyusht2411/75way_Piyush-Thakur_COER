@@ -7,6 +7,20 @@
     border-color: #14dca4;
 
 }
+.myText{
+    margin-left: 46px;
+    margin-bottom: 10px;
+}
+.mybuttons{
+    padding: 30px;
+    padding-left: 50px;
+    display: flex
+}
+.container{
+    width: 80vw;
+    padding: 30px;
+    padding-left: 50px;
+}
 .reviewed{
     background-color: #e9cb0c;
     border-color: #e5c80a;
