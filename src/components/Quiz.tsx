@@ -10,6 +10,7 @@ const Quiz = () => {
     let [question, setQuestion] = useState(data[index]);
     let [lock, setLock] = useState<boolean>(false);
     let[result, setResult] = useState<boolean>(false);
+    const [submitAnswer, setSubmitAnswer] = useState<boolean>(false);
     const navigate = useNavigate();
     let Option1 = useRef(null);
     let Option2 = useRef(null);
@@ -31,7 +32,10 @@ const Quiz = () => {
             if(question.ans===ans){
                 e.target.classList.add('correct');
                 setLock(true);
-                setScore(prev=>prev+1);
+                if(submitAnswer==true){
+                  setScore(prev=>prev+1);
+                }
+               
     
             }
             else{
@@ -74,7 +78,7 @@ const Quiz = () => {
               button5.current?.classList.remove('reviewed');
               button5.current?.classList.add('answered')
             }
-            
+            setSubmitAnswer(true);
             setIndex(++index);
             setQuestion(data[index]);
             setLock(false);
