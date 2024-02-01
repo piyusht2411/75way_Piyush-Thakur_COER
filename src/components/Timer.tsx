@@ -34,8 +34,7 @@ const Timer = ({ duration }: Props) => {
 
         <>
             <div>
-               <p>You have 20 seconds</p>
-               <p>to complete the quiz.</p>
+               <p className='timerText'>You have 20 seconds to complete the quiz.</p>
                <p className='mytimer'>{getFormattedTime(time)}</p>
             </div>
         </>

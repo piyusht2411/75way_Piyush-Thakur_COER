@@ -10,16 +10,26 @@
 .myText{
     margin-left: 46px;
     margin-bottom: 10px;
+    font-size: 13px;
 }
 .mybuttons{
-    padding: 30px;
-    padding-left: 50px;
-    display: flex
+    padding: 12px;
+    padding-left: 43px;
+    display: flex;
+    width: 30vw;
+    padding-top: 0px;
+}
+
+.questionButtons{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid gray;
+    padding: 12px;
 }
 .container{
-    width: 80vw;
-    padding: 30px;
-    padding-left: 50px;
+    width: 60vw;
+    padding: 18px;
+    padding-left: 32px;
 }
 .reviewed{
     background-color: #e9cb0c;
@@ -37,25 +47,32 @@
 .container ul li{
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 50px;
     padding-left: 15px;
     border: 1px solid #686868;
     border-radius: 8px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
+    width: 30vw;
 
 
 }
 .container button{
     margin: auto;
-    width: 250px;
-    height: 65px;
-    font-size: 25px;
-    font-weight: 500;
+    width: 70px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 300;
     border-radius: 8px;
     cursor: pointer;
 
+}
+.container h1{
+    text-align: center;
+}
+.container h2{
+    font-size: 18px;
 }
 .submitButton{
     
@@ -65,11 +82,19 @@
     font-weight: 800!important;
 }
 
+.timerText{
+    font-size: 13px;
+    padding: 10px;
+    text-wrap: wrap;
 
+}
 .mytimer{
-    border:2px solid black;
-    width:40px;
-    padding-left: 10px;
+    border: 2px solid black;
+    width: 84px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    color: black;
 }
 .resultContainer{
     border: 1px solid black;
@@ -86,8 +111,8 @@
     transform: translate(0, -50%);
 }
 .allQueshions{
-    width: 35vw;
-    padding: 15px;
+    width: 18vw;
+    padding: 40px;
 }
 @media screen and (max-width: 480px) {
     .submitButton {

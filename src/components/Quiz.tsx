@@ -186,10 +186,10 @@ const Quiz = () => {
     }
 
     // timeout function for finish test after 20 seconds
-    setTimeout(()=>{
-      finish();
+    // setTimeout(()=>{
+    //   finish();
 
-    },20000)
+    // },20000)
 
     
   return (
@@ -227,12 +227,13 @@ const Quiz = () => {
     </div>
     {!result?<>
       <div className='allQueshions'>
+      <div className='questionButtons'>
       <button ref={button1} onClick={toOne}>1</button>
       <button ref={button2} onClick={toTwo}>2</button>
       <button ref={button3} onClick={toThree}>3</button>
       <button ref={button4} onClick={toFour}>4</button>
       <button ref={button5} onClick={toFive}>5</button>
-      <br/>
+      </div>
       <Timer duration={1*20*1000}/>
     </div>
    
