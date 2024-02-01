@@ -206,3 +206,18 @@
     } 
 
 }
+@media screen and (max-width: 616px) {
+    .questionButtons{
+      width: 113px;
+    }
+
+
+}
+
+@media screen and (max-width: 460px) {
+    .questionButtons{
+        height: 15vh;
+        width: 60vw;
+    }
+
+}
